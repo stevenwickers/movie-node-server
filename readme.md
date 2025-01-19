@@ -28,6 +28,10 @@ testing the core functionality of the application.
 
         http://localhost:3005/api-docs
 
+4. Run Jest Test
+
+         npm test
+
 
 ## Env Variables
 

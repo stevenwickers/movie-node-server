@@ -3,7 +3,7 @@
   "testEnvironment": "node",
   "moduleFileExtensions": ["js", "json", "ts"],
   "roots": [
-    "<rootDir>/server/tests"
+    "<rootDir>/src/tests"
   ],
   "transform": {
     "^.+\\.ts?$": "ts-jest"

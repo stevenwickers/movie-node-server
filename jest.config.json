@@ -1,0 +1,14 @@
+{
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "roots": [
+    "<rootDir>/server/tests"
+  ],
+  "transform": {
+    "^.+\\.ts?$": "ts-jest"
+  },
+  "setupFiles": [
+    "dotenv/config"
+  ]
+}

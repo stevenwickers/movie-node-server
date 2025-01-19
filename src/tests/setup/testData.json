@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "author": "Ernest Hemingway",
+    "country": "United States",
+    "imageLink": "images/the-old-man-and-the-sea.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea\n",
+    "pages": 128,
+    "title": "The Old Man and the Sea",
+    "year": 1952
+  },
+  {
+    "id": 2,
+    "author": "Homer",
+    "country": "Greece",
+    "imageLink": "images/the-iliad-of-homer.jpg",
+    "language": "Greek",
+    "link": "https://en.wikipedia.org/wiki/Iliad\n",
+    "pages": 608,
+    "title": "Iliad",
+    "year": -735
+  },
+  {
+    "id": 3,
+    "author": "Homer",
+    "country": "Greece",
+    "imageLink": "images/the-odyssey-of-homer.jpg",
+    "language": "Greek",
+    "link": "https://en.wikipedia.org/wiki/Odyssey\n",
+    "pages": 374,
+    "title": "Odyssey",
+    "year": -800
+  },
+  {
+    "id": 4,
+    "author": "James Joyce",
+    "country": "Irish Free State",
+    "imageLink": "images/ulysses.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Ulysses_(novel)\n",
+    "pages": 228,
+    "title": "Ulysses",
+    "year": 1922
+  }
+]

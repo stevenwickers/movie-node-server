@@ -1,0 +1,69 @@
+openapi: 3.0.0
+info:
+  title: Example Node Server
+  version: 1.0.0
+  description: |
+    ## How to get started:
+    1. Run Get /auth and copy to token
+    2. Select the Authorize button at top and paste in the token then select Authorize
+    3. Now run the other endpoints
+servers:
+  - url: http://localhost:3005
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  responses:
+    UnauthorizedError:
+      description: Access token is missing or invalid
+paths:
+  /auth:
+    get:
+      description: |
+        How to run:
+        1. Select the Try is out
+        2. Select Execute
+        3. Copy the Response Body
+        4. Paste into Authorization modal by selecting Authorization
+      summary: Get an auth token
+      responses:
+        '200':
+          description: Successful response
+  /movies:
+    get:
+      description: |
+        How to run:
+        1. Select the Try is out
+        2. Select Execute
+      summary: Get a list of movies
+      security:
+        - bearerAuth: [ ]
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized
+  /movies/{id}:
+    get:
+      description: |
+        How to run:
+        1. Select the Try is out
+        2. Enter in a valid Movie ID
+        3. Select Execute
+      summary: Get a movies by ID
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          required: true
+          description: Valid Movie ID
+      security:
+        - bearerAuth: [ ]
+      responses:
+        '200':
+          description: Successful response
+        '401':
+          description: Unauthorized

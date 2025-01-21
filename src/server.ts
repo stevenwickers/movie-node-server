@@ -39,6 +39,7 @@ server.setErrorConfig((app) => {
 
 const db:IDataServices = container.get<IDataServices>('DataServices')
 const serverInstance = server.build()
+
 serverInstance.listen(PORT, () => {
     db.connect().then(() => {
         console.log('');

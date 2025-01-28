@@ -12,7 +12,7 @@ const container = new Container();
 container.bind<string>('ConnectionString').toConstantValue(connectString);
 container.bind('Schema').toConstantValue(MovieModelSchema);
 container.bind<AuthController>(AuthController).toSelf();
-container.bind<IDataServices>('DataServices').to(DataServices); //.inSingletonScope()
-container.bind<IController>('Controller').to(MovieController); //.inSingletonScope()
+container.bind<IDataServices>('DataServices').to(DataServices).inSingletonScope()
+container.bind<IController>('Controller').to(MovieController).inSingletonScope()
 
 export default container

@@ -25,7 +25,7 @@ paths:
         How to run:
         1. Select the Try is out
         2. Select Execute
-        3. Copy the Response Body
+        3. Copy the token data from the Response Body
         4. Paste into Authorization modal by selecting Authorization
       summary: Get an auth token
       responses:

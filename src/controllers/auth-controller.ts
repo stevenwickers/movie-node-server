@@ -8,6 +8,6 @@ export class AuthController {
     @httpGet('/')
     public getAuth(@request() req:express.Request, @response() res:express.Response) {
         const token = signToken({})
-        res.status(200).send(token)
+        res.status(200).send({"token": token})
     }
 }
